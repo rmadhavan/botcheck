@@ -1,0 +1,234 @@
+# BotCheck — AI Crawler Bot List
+# Community-maintained. PRs welcome.
+#
+# Fields:
+#   name:       Human-readable bot name
+#   userAgent:  The User-Agent string used in robots.txt
+#   operator:   Company operating the bot
+#   purpose:    What it's used for (training, search, summarization, etc.)
+#   respectsRobots: Whether the bot is known to respect robots.txt (true/false/unknown)
+
+bots:
+  # --- OpenAI ---
+  - name: GPTBot
+    userAgent: GPTBot
+    operator: OpenAI
+    purpose: AI training and inference
+    respectsRobots: true
+
+  - name: ChatGPT-User
+    userAgent: ChatGPT-User
+    operator: OpenAI
+    purpose: ChatGPT browsing feature
+    respectsRobots: true
+
+  - name: OAI-SearchBot
+    userAgent: OAI-SearchBot
+    operator: OpenAI
+    purpose: OpenAI search features
+    respectsRobots: true
+
+  # --- Anthropic ---
+  - name: ClaudeBot
+    userAgent: ClaudeBot
+    operator: Anthropic
+    purpose: AI training
+    respectsRobots: true
+
+  - name: anthropic-ai
+    userAgent: anthropic-ai
+    operator: Anthropic
+    purpose: AI training
+    respectsRobots: true
+
+  # --- Google ---
+  - name: Google-Extended
+    userAgent: Google-Extended
+    operator: Google
+    purpose: Gemini AI training
+    respectsRobots: true
+
+  - name: GoogleOther
+    userAgent: GoogleOther
+    operator: Google
+    purpose: General crawling / AI training
+    respectsRobots: true
+
+  # --- Meta ---
+  - name: FacebookBot
+    userAgent: FacebookBot
+    operator: Meta
+    purpose: AI training
+    respectsRobots: true
+
+  - name: Meta-ExternalAgent
+    userAgent: Meta-ExternalAgent
+    operator: Meta
+    purpose: AI training
+    respectsRobots: true
+
+  - name: meta-externalfetcher
+    userAgent: meta-externalfetcher
+    operator: Meta
+    purpose: AI training
+    respectsRobots: true
+
+  # --- Apple ---
+  - name: Applebot-Extended
+    userAgent: Applebot-Extended
+    operator: Apple
+    purpose: Apple Intelligence training
+    respectsRobots: true
+
+  # --- Common Crawl ---
+  - name: CCBot
+    userAgent: CCBot
+    operator: Common Crawl
+    purpose: Open web corpus / AI training datasets
+    respectsRobots: true
+
+  # --- Perplexity ---
+  - name: PerplexityBot
+    userAgent: PerplexityBot
+    operator: Perplexity AI
+    purpose: AI search and summarization
+    respectsRobots: true
+
+  # --- ByteDance ---
+  - name: Bytespider
+    userAgent: Bytespider
+    operator: ByteDance
+    purpose: AI training (TikTok / Doubao)
+    respectsRobots: unknown
+
+  # --- Amazon ---
+  - name: Amazonbot
+    userAgent: Amazonbot
+    operator: Amazon
+    purpose: Alexa AI training
+    respectsRobots: true
+
+  # --- Microsoft ---
+  - name: Bingbot
+    userAgent: Bingbot
+    operator: Microsoft
+    purpose: Bing search / Copilot
+    respectsRobots: true
+
+  # --- Cohere ---
+  - name: cohere-ai
+    userAgent: cohere-ai
+    operator: Cohere
+    purpose: AI training
+    respectsRobots: true
+
+  # --- AI2 ---
+  - name: AI2Bot
+    userAgent: AI2Bot
+    operator: Allen Institute for AI
+    purpose: AI research and training
+    respectsRobots: true
+
+  - name: Ai2Bot-Dolma
+    userAgent: Ai2Bot-Dolma
+    operator: Allen Institute for AI
+    purpose: Dolma dataset
+    respectsRobots: true
+
+  # --- Diffbot ---
+  - name: Diffbot
+    userAgent: Diffbot
+    operator: Diffbot
+    purpose: Web data extraction / AI
+    respectsRobots: true
+
+  # --- Webz.io ---
+  - name: Omgilibot
+    userAgent: Omgilibot
+    operator: Webz.io
+    purpose: Data collection for AI
+    respectsRobots: true
+
+  # --- Timpi ---
+  - name: Timpibot
+    userAgent: Timpibot
+    operator: Timpi
+    purpose: Decentralized search / AI
+    respectsRobots: true
+
+  # --- YouChat ---
+  - name: YouBot
+    userAgent: YouBot
+    operator: You.com
+    purpose: AI search
+    respectsRobots: true
+
+  # --- Hugging Face ---
+  - name: iaskspider
+    userAgent: iaskspider
+    operator: iAsk.Ai
+    purpose: AI search
+    respectsRobots: unknown
+
+  # --- Scrapy-based ---
+  - name: Scrapy
+    userAgent: Scrapy
+    operator: Various
+    purpose: General scraping (often AI training)
+    respectsRobots: unknown
+
+  # --- Seer / Seekr ---
+  - name: SemrushBot-OCOB
+    userAgent: SemrushBot-OCOB
+    operator: Semrush
+    purpose: SEO data / AI features
+    respectsRobots: true
+
+  # --- Kangaroo ---
+  - name: img2dataset
+    userAgent: img2dataset
+    operator: Various (LAION)
+    purpose: Image dataset collection for AI training
+    respectsRobots: unknown
+
+  # --- Webpilot ---
+  - name: Webpilot
+    userAgent: Webpilot
+    operator: WebPilot AI
+    purpose: AI browsing agent
+    respectsRobots: unknown
+
+  # --- PetalBot ---
+  - name: PetalBot
+    userAgent: PetalBot
+    operator: Huawei / Petal Search
+    purpose: Search / AI
+    respectsRobots: true
+
+  # --- Velennya ---
+  - name: VelenpublicWebCrawler
+    userAgent: VelenpublicWebCrawler
+    operator: Velennya
+    purpose: AI training data
+    respectsRobots: unknown
+
+  # --- Fyreball ---
+  - name: Fyrebot
+    userAgent: Fyrebot
+    operator: Fyreball
+    purpose: AI search
+    respectsRobots: unknown
+
+  # --- Friendly Crawler ---
+  - name: FriendlyCrawler
+    userAgent: FriendlyCrawler
+    operator: Friendly AI
+    purpose: AI data collection
+    respectsRobots: unknown
+
+  # --- ISSCyberRiskCrawler ---
+  - name: ISSCyberRiskCrawler
+    userAgent: ISSCyberRiskCrawler
+    operator: ISS
+    purpose: Cyber risk AI analysis
+    respectsRobots: unknown

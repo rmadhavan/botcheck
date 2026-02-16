@@ -1,0 +1,27 @@
+# BotCheck
+
+> Check if AI crawlers can see your website — or if your blocks are actually working.
+
+BotCheck is a free, open-source tool that scans any URL and reports how visible it is to AI crawlers. No login, no account, no tracking.
+
+## How it works
+
+Paste a URL, pick a goal (Block AI or Be Found by AI), and get a scored report across 7 checks:
+
+- robots.txt analysis against 30+ known AI crawlers
+- Meta directives (noai, noimageai, noindex)
+- HTTP headers (X-Robots-Tag, Cache-Control, CORS)
+- llms.txt presence and validity
+- Response stability and latency
+- Paywall and login wall detection
+- Content structure and semantic HTML quality
+
+Results are scored 0-100 with fully transparent, public scoring weights.
+
+## Principles
+
+- No login, no account, ever
+- No data stored or retained
+- Transparent scoring algorithm
+- Community maintained
+- Always free
