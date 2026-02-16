@@ -2,9 +2,12 @@ import type { Metadata } from "next";
 import Link from "next/link";
 
 export const metadata: Metadata = {
-  title: "How It Works - BotCheck",
+  title: "How It Works",
   description:
     "Learn how BotCheck checks your site for AI crawler visibility. Understand the scoring system, what gets checked and how to improve your results.",
+  alternates: {
+    canonical: "https://botcheck.app/how-it-works",
+  },
 };
 
 const FAQ_ITEMS = [
@@ -35,8 +38,25 @@ const FAQ_ITEMS = [
 ];
 
 export default function HowItWorks() {
+  const faqSchema = {
+    "@context": "https://schema.org",
+    "@type": "FAQPage",
+    mainEntity: FAQ_ITEMS.map((item) => ({
+      "@type": "Question",
+      name: item.q,
+      acceptedAnswer: {
+        "@type": "Answer",
+        text: item.a,
+      },
+    })),
+  };
+
   return (
     <>
+      <script
+        type="application/ld+json"
+        dangerouslySetInnerHTML={{ __html: JSON.stringify(faqSchema) }}
+      />
       {/* Nav */}
       <nav
         className="flex items-center justify-between px-6 py-4 border-b"
